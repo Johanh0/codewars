@@ -13,6 +13,8 @@ PSEUDO CODE
 
 1. I need a FUNCTION that takes two PARAMETERS
 2. IF yearToCompare is bigger than birthYear --> Calculate with substraction how old would be in an specific year
+3. IF birthYear is bigger than yearToCompare --> Calculate with substracition how old woul be in the past
+4. IF born in the same exact year return the message
 */
 
 function calculatingAge(birthYear, yearToCompare) {
