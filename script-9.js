@@ -13,6 +13,7 @@ PSEUDO CODE
 3. Returnr an array with the integers that are not in the arrayList
 */
 
+// Option 1
 Array.prototype.removeSpecificNumbers = (arrayIntegers, arrayList) => {
   let result = [];
   arrayIntegers.forEach((number) => {
@@ -39,6 +40,30 @@ console.log(
 
 console.log(
   Array.prototype.removeSpecificNumbers(
+    [8, 2, 7, 2, 3, 4, 6, 5, 4, 4, 1, 2, 3],
+    [2, 4, 3]
+  )
+);
+
+// Option 2
+
+Array.prototype.removeSpecificNumbers2 = (arrayInteger, arrayList) => {
+  return arrayInteger.filter((number) => !arrayList.includes(number));
+};
+
+console.log(
+  Array.prototype.removeSpecificNumbers2([1, 1, 2, 3, 1, 2, 3, 4], [1, 3])
+);
+
+console.log(
+  Array.prototype.removeSpecificNumbers2(
+    [1, 1, 2, 3, 1, 2, 3, 4, 4, 3, 5, 6, 7, 2, 8],
+    [1, 3, 4, 2]
+  )
+);
+
+console.log(
+  Array.prototype.removeSpecificNumbers2(
     [8, 2, 7, 2, 3, 4, 6, 5, 4, 4, 1, 2, 3],
     [2, 4, 3]
   )
